@@ -1,0 +1,87 @@
+extends ../layouts/default
+
+block vars
+	-
+		const page = {
+			title: ' Hedonism Tower'
+		};
+
+block main
+	#preloader.preloader
+		.preloader__row 
+			.preloader__item 
+			.preloader__item 
+	#page1.page1 
+		.page1__image.image 
+			img(src="images/page1.jpg", alt="alt")
+		.page1__container.container
+			#page1__text.page1__text
+				p.page1__text--first 
+					|Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum corporis quia deserunt commodi quisquam impedit sunt reprehenderit, pariatur nemo facere libero laudantium, ab excepturi mollitia. Sit, ipsa! Error impedit asperiores deleniti laudantium, quaerat nobis itaque quidem nostrum necessitatibus delectus architecto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam a vel ducimus. Sint exercitationem dignissimos itaque voluptatum placeat non aperiam corporis modi saepe, ad odio voluptatem ab velit consequuntur excepturi voluptatibus cumque dolorem mollitia accusamus tempora porro aut error laborum?
+	#page2.page2
+		.page2__image.image
+			img(src="images/page2.jpg", alt="alt")
+		.page2__container.container
+			.page2__row
+				.page2__text
+					.page2__left 
+						
+						p.page2__left--first.text-desktop
+							|Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, velit itaque pariatur, iste voluptatum corporis eveniet expedita possimus blanditiis modi provident, quasi vel. Id quas amet nihil suscipit, debitis in!
+						
+						p.page2__left--first-mobile.text-mobile.page2-text-mobile
+							|Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, velit itaque pariatur, iste voluptatum corporis eveniet expedita possimus blanditiis modi provident, quasi vel. Id quas amet nihil suscipit, debitis in!
+				
+					.page2__right.page2-text-mobileB
+					
+						p.page2__right--first.text-desktop 
+							|Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum corporis quia deserunt commodi quisquam impedit sunt reprehenderit, pariatur nemo facere libero laudantium, ab excepturi mollitia. Sit, ipsa! Error impedit asperiores deleniti laudantium, quaerat nobis itaque quidem nostrum necessitatibus delectus architecto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam a vel ducimus. Sint exercitationem dignissimos itaque voluptatum placeat non aperiam corporis modi saepe, ad odio voluptatem ab velit consequuntur excepturi voluptatibus cumque dolorem mollitia accusamus tempora porro aut error laborum?
+						p.page2__right--second.text-desktop
+							|Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, odio. Nihil voluptatem voluptate illo voluptas velit dolor quaerat! Doloribus consectetur, porro sed dicta ab ducimus omnis in libero sequi unde qui adipisci dolores laboriosam enim dolorum tempora velit! Libero, voluptatibus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui error harum deleniti aliquid odio modi tenetur facere earum totam assumenda est minus, expedita itaque asperiores corporis amet quod maxime et iure, dolor iusto mollitia corrupti, magni in. Facere, a debitis.
+						
+						p.page2__right--first-mobile.text-mobile
+							|Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, velit itaque pariatur, iste voluptatum corporis eveniet expedita possimus blanditiis modi provident, quasi vel. Id quas amet nihil suscipit, debitis in!
+						p.page2__right--second-mobile.text-mobile
+							|Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, velit itaque pariatur, iste voluptatum corporis eveniet expedita possimus blanditiis modi provident, quasi vel. Id quas amet nihil suscipit, debitis in!
+			
+				a(href='#page1').page2__step-back.step-back.click
+					span 
+						|Step back
+	#page3.page3
+		.page3__image.image
+			img(src="images/page3.jpg", alt="alt")
+		.page3__container.container
+			.page3__row
+				.page3__text
+					.page3__left
+
+						p.page3__left--first.text-desktop
+							|Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum corporis quia deserunt commodi quisquam impedit sunt reprehenderit, pariatur nemo facere libero laudantium, ab excepturi mollitia. Sit, ipsa! Error impedit asperiores deleniti laudantium, quaerat nobis itaque quidem nostrum necessitatibus delectus architecto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam a vel ducimus. Sint exercitationem dignissimos itaque voluptatum placeat non aperiam corporis modi saepe, ad odio voluptatem ab velit consequuntur excepturi voluptatibus cumque dolorem mollitia accusamus tempora porro aut error laborum?
+						p.page3__left--second.text-desktop
+							|Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, odio. Nihil voluptatem voluptate illo voluptas velit dolor quaerat! Doloribus consectetur, porro sed dicta ab ducimus omnis in libero sequi unde qui adipisci dolores laboriosam enim dolorum tempora velit! Libero, voluptatibus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui error harum deleniti aliquid odio modi tenetur facere earum totam assumenda est minus, expedita itaque asperiores corporis amet quod maxime et iure, dolor iusto mollitia corrupti, magni in. Facere, a debitis.
+
+						p.page3__left--first-mobile.text-mobile.next3
+							|Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, velit itaque pariatur, iste voluptatum corporis eveniet expedita possimus blanditiis modi provident, quasi vel. Id quas amet nihil suscipit, debitis in!
+						p.page3__left--second-mobile.text-mobile.next3
+							|Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, velit itaque pariatur, iste voluptatum corporis eveniet expedita possimus blanditiis modi provident, quasi vel. Id quas amet nihil suscipit, debitis in!
+
+					.page3__right
+
+						p.page3__right--first.text-desktop 
+							|Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, velit itaque pariatur, iste voluptatum corporis eveniet expedita possimus blanditiis modi provident, quasi vel. Id quas amet nihil suscipit, debitis in!
+
+						p.page3__right--first-mobile.text-mobile.next3
+							|Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, velit itaque pariatur, iste voluptatum corporis eveniet expedita possimus blanditiis modi provident, quasi vel. Id quas amet nihil suscipit, debitis in!
+
+				button.page3__step-back.step-back
+					span 
+						|Step back
+
+	#page4.page4
+		.page4__image.image 
+			img(src="images/page4.jpg", alt="alt")
+		.page4__container.container
+			#page4__text.page4__text
+				p.page4__text--first 
+					|Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum corporis quia deserunt commodi quisquam impedit sunt reprehenderit, pariatur nemo facere libero laudantium, ab excepturi mollitia. Sit, ipsa! Error impedit asperiores deleniti laudantium, quaerat nobis itaque quidem nostrum necessitatibus delectus architecto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam a vel ducimus. Sint exercitationem dignissimos itaque voluptatum placeat non aperiam corporis modi saepe, ad odio voluptatem ab velit consequuntur excepturi voluptatibus cumque dolorem mollitia accusamus tempora porro aut error laborum?
+
